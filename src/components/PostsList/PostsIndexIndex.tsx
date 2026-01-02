@@ -1,15 +1,7 @@
 import style from "./Posts.module.css";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-
-
-type Post = {
-  id: number;
-  title: string;
-  createdAt: string;
-  categories: string[];
-  content: string;
-}
+import type { Post } from '../../types/Post';
 
 type PostsResponce = {
   posts: Post[];

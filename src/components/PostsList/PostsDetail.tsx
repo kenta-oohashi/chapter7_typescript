@@ -1,14 +1,8 @@
 import { useParams } from "react-router-dom";
 import style from './PostsDetail.module.css';
 import { useEffect, useState } from "react";
+import type { Post } from '../../types/Post';
 
-type Post = {
-  id: number;
-  title: string;
-  createdAt: string;
-  categories: string[];
-  content: string;
-}
 export default function PostsDetail() {
   
   const { id } = useParams<{ id: string}>();
